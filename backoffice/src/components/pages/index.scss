@@ -1,0 +1,68 @@
+@import "~rodal/lib/rodal.css";
+
+html {
+  font-size: 1vw;
+  font-family: sans-serif;
+  background-color: #CCCCCC;
+  overflow: hidden;
+
+  @media (min-aspect-ratio: 2/1) {
+    font-size: 2vh;
+  }
+}
+
+.page-index {
+  margin-top: calc(50vh - 24.75vw);
+  margin-left: 0.5vw;
+  height: 49.5vw;
+  width: 99vw;
+
+  @media (min-aspect-ratio: 2/1) {
+    margin-top: 0.5vh;
+    height: 99vh;
+    width: 198vh;
+    margin-left: calc(50vw - 99vh);
+  }
+
+  display: flex;
+
+  &__wms {
+    flex: 2;
+
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      background-color: white;
+      box-shadow: 2px 2px 8px 2px rgba(black, 0.2);
+    }
+  }
+
+  &__shipments {
+    flex: 3;
+    background: white;
+    box-shadow: 2px 2px 8px 2px rgba(black, 0.2);
+
+    margin: 0 1rem;
+  }
+
+  &__mobile {
+    flex: 2;
+    background-color: white;
+    box-shadow: 2px 2px 8px 2px rgba(black, 0.2);
+  }
+
+
+  &__hub-in {
+    flex: 1;
+  }
+
+  &__hub-out-linehaul {
+    flex: 1;
+    margin: 0.5rem 0;
+  }
+
+  &__hub-out-delivery {
+    flex: 1;
+  }
+}

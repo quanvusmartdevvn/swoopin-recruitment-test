@@ -1,0 +1,24 @@
+{
+  "plugins": [
+    "@babel/proposal-class-properties",
+    [
+      "root-import",
+      {
+        "paths": [
+          {
+            "rootPathSuffix": "./src/services",
+            "rootPathPrefix": "services"
+          },
+          {
+            "rootPathSuffix": "./src/models",
+            "rootPathPrefix": "models"
+          },
+          {
+            "rootPathSuffix": "./src/configuration",
+            "rootPathPrefix": "configuration"
+          }
+        ]
+      }
+    ]
+  ]
+}

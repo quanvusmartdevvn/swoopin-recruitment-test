@@ -1,0 +1,7 @@
+<svg id="icon-map-marker" data-name="icon-map-marker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <title>icon-map-marker</title>
+    <rect width="24" height="24" fill="none"/>
+    <g id="icon-map-marker" fill="currentColor">
+        <path d="M11.08,23.52C4.26,13.64,3,12.63,3,9A9,9,0,0,1,21,9c0,3.63-1.26,4.64-8.08,14.52a1.12,1.12,0,0,1-1.84,0ZM12,12.75A3.75,3.75,0,1,0,8.25,9,3.75,3.75,0,0,0,12,12.75Z"/>
+    </g>
+</svg>

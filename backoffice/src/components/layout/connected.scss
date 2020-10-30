@@ -1,0 +1,176 @@
+@import "~style/variables";
+
+/* Generic resets */
+html {
+  font-size: 16px !important;
+
+  @media(max-width: 359px) {
+    font-size: 13px !important;
+  }
+
+  &:after {
+    display: none;
+  }
+
+  @include mobile() {
+    &:after {
+      content: 'mobile'
+    }
+  }
+
+  @include desktop() {
+    &:after {
+      content: 'desktop'
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: $font-main;
+}
+
+body {
+  height: 100%;
+  color: $font-color;
+}
+
+#___gatsby {
+  height: 100%;
+}
+
+
+@include desktop() {
+  .no-desktop {
+    display: none !important;
+  }
+
+  // Compatibility
+  .mobile {
+    display: none !important;
+  }
+}
+
+@include mobile() {
+  .no-mobile
+  {
+    display: none !important;
+  }
+
+  .sweet-alert {
+    margin: 0 !important;
+    width: calc(100vw - 2rem) !important;
+    top: 5.5rem !important;
+    left: 1rem !important;
+  }
+
+  // Compatibility
+  .desktop {
+    display: none !important;
+  }
+}
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+
+  &--spaces-open {
+    overflow: hidden;
+  }
+}
+
+/* Connected block */
+.connected {
+  transition: transform .3s;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+
+  // Modifiers
+  &--spaces-open {
+    transform: scale(0.7) translateX(90vw);
+    box-shadow: 1px 0 5px 2px rgba(black, 0.5);
+    height: 100vh;
+    overflow: hidden;
+
+    // Children
+    & .content-overlay {
+      display: block;
+    }
+  }
+
+  &--spaces-closing {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  // Children
+  &:before {
+    position: fixed;
+    display: block;
+    content: ' ';
+    z-index: -1;
+
+    top: 4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-image: url("~resources/images/background-app.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+  &:after {
+    position: fixed;
+    display: block;
+    content: ' ';
+    z-index: -1;
+
+    top: 4rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.content {
+  padding-top: calc(4rem + env(safe-area-inset-top));
+  padding-bottom: 5rem;
+  width: 100vw;
+  min-height: 100vh;
+
+  @include desktop() {
+    padding-top: 4.5rem;
+    padding-left: 5.5rem;
+    padding-bottom: 0;
+    width: auto;
+    min-height: 100vh;
+
+    &--full {
+      padding-left: 0;
+    }
+  }
+}
+
+.content-overlay {
+  width: 100%;
+  display: none;
+  position: absolute;
+
+  border: 0;
+  background-color: rgba(black, 0.5);
+
+  z-index: 100;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

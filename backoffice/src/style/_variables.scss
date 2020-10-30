@@ -1,0 +1,73 @@
+@import "colors.scss";
+
+// Variables
+$font-color: $darkblue-500 !default;
+
+$primary: $blue-500 !default;
+$secondary: $darkblue-500 !default;
+$info: $yellow-500 !default;
+
+$primary-palette: $blue;
+$secondary-palette: $darkblue;
+$info-palette: $yellow !default;
+
+$font-title: "Rubik", sans-serif;
+$font-main: "Rubik", sans-serif;
+$font-form: "Roboto", sans-serif;
+
+@mixin card($borderRadius: 0.3rem) {
+  margin: 0.5rem 0 1rem;
+  padding: 0.1rem 0;
+  background-color: white;
+  border-radius: $borderRadius;
+  box-shadow: 1px 1px 3px 0 rgba(black, 0.1);
+}
+
+@mixin mobile() {
+  @media (max-width: 620px) {
+    @content
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: 621px) {
+    @content
+  }
+}
+
+@mixin desktop-medium() {
+  @media (min-width: 941px) {
+    @content
+  }
+}
+
+@mixin desktop-large() {
+  @media (min-width: 1341px) {
+    @content
+  }
+}
+
+
+@mixin mobile-width($width: 620px) {
+  @media (max-width: $width) {
+    @content
+  }
+}
+
+@mixin desktop-width($width: 621px) {
+  @media (min-width: $width) {
+    @content
+  }
+}
+
+@mixin desktop-medium-width() {
+  @media (min-width: 941px) {
+    @content
+  }
+}
+
+@mixin desktop-large-width() {
+  @media (min-width: 1341px) {
+    @content
+  }
+}

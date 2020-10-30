@@ -1,0 +1,60 @@
+app:
+    endpoint:
+        host: http://127.0.0.1:10000
+    server:
+        host: 0.0.0.0
+        port: 10000
+        cors:
+            allowedUrl: "*"
+    encryption:
+        secret: CALR7Kx6RPQ5JAD5CwuA
+    authentication:
+        expiresIn: "365 days"
+    mapbox:
+        accessToken: pk.eyJ1IjoiZmxlZXRlcnMiLCJhIjoiY2thMjhoNXY1MDB2djNlbGtzNWlzNWlndyJ9.kib-Z0ofR67HMPguLuU3JA
+    account:
+        id: 5f4e60be7245fe4b6b562317
+        email: admin@swoopin.green
+        password: BbYyfB8IEhkCaalcaWGnKCileJyxfQBq9E6I6qRrNaau4uYM6OftQIGLP4j+Sw==
+        name: Admin
+    vehicles:
+        - id: 5f4f718f842281fbc3c8aa3d
+          name: Moughard Kali
+          vehicle: truck
+          speed: 60
+          temperature: 12
+          plate: FS-014-MC
+          polyline: '_b~hHsqhMuA|PgBfLoEj\oKry@aJro@kNbcAkL|{@_Kp`@mL|^{Jnb@cKvm@}Odc@mIrXiDbIqCrDoEjByFImEaBwBeAcAH}@nAoBu@_IgEgXyNoTqLmPkJsD}CaIqEoO_NeTePeEgD_C}AiA}AcABk@t@{B_EuEaE_FqFw@gD{@aBuCaLuBiC_AuCWwBnBgJ`DaO~Gs[zA}Fx@E`AiBGaClB_BvJyHdMiGpImBfHyAVc@nAW|AuFlBg@tFQbDl@dKnBfLdClGxKj@zA`EvF|BjEzE{I~EkJ|FiKzH}NxHwN\q@{FoGs@]Kg@`HkMrBqDf@@\ULaAQaAk@_@YMeAmHo@aEs@yExE{BpAcAtDgJpCiHRg@b@\rC_@hDoA|KgChKmDzKiDtKoDtL}DbImBxLeEtEkAFZ\?Nc@Km@Eg@A}GD}GHgNbC{[hEcj@rDnClCfA~EZj@[rBwE~CxDf@`@RhABLj@c@VLxBi@`ACbBD'
+          online: false
+        - id: 5f5536ab295cd2d0d338eb33
+          name: Armel Gomez
+          vehicle: truck
+          speed: 50
+          temperature: 13
+          plate: MT-042-DF
+          polyline: 'mieiH{wiMvAp@rJvEdFlC|DlBhD`B~Bz@lFy\j@if@aRw~@c@AwCy@G]kYSaBpPgh@m@GVNf@d@zD~BxCPGzBbD`AeC|MdQmC`HiC`GaDrOb_@jQt@nJMv@xBbA'
+          online: false
+        - id: 5f5536b27299477e3be37376
+          name: Bachir Ahmed
+          vehicle: truck
+          speed: 70
+          temperature: 11
+          plate: YG-127-UH
+          polyline: '{bkiHudsMlAc@fDoBjEeEvIaN|C{DzBgH|BkJ~D{KxQcKjTyNbJoFpO?~JfBjHpGhBdM?tAItN}@zu@WbJiCnF}DrGsEtA}GvBg@{DqBoHkI|KgHhKqB`DOjHsDj@O}Ba@aB}@sAMqAUqCEiGPoFFiELcGk@iOyOD_JsAq@m@cAnBqBpEwBtB_Al@uA?q@Pk@dCqAtAq@wGUeC_Dn@mB`@qEPUq@RcDeC\iCj@iEr@iC^o@EaBb@j@lD`B]xAUj@m@bB_@rCc@~@[v@[PU`@S'
+          online: false
+        - id: 5f5536b76205e5d4d7cef5d1
+          name: Hugo Moreira
+          vehicle: truck
+          speed: 55
+          temperature: 13
+          plate: EF-068-KL
+          polyline: '{d_iHu|pMmC{JiDiPAwAMeDs@{DgAu@oAb@u@tAWz@ElAB`BTlA`@jA\vAGz@q@nBkAvCcBxBqBnAsCzAeE|E}DnFmFpHgJfMkKlNcAFcDhGwA~AdHzOxGhPlGbWlL~g@jG|W{AJy@fBNrBpAz@jAe@FsATw@hDcAvFgAxFwAzIqAzImBhLiCnK}BbHgBdJgBhAF|AILaBDyDEiC_@gEWuAiAoC}@iC{AiFuC{LcCaK{EkTqDsOsCkKi@qBwDwHgIcPoC}FwAqD'
+          online: false
+        - id: 5f5536bcd0b396d2eed3eeb4
+          name: Mikael Charrad
+          vehicle: truck
+          speed: 75
+          temperature: 12
+          plate: CD-082-LF
+          polyline: 'yakiHqhhMuAC?ToAQ{Ai@UFCJ@jASlDKzAWL}@nCg@tBQ\EVRRx@Zn@h@l@^_@dBq@fDWjA_@d@u@Li@c@i@kAk@qCMw@g@@FjHTtBL^`Ap@tDlCpBdBsEfHbCa@`FkArA`@lItO~DzIVxBnAbKrIxu@bDbb@vDr`@fIzh@w@pBd@rBfAGfD~@vJfHMxAEdCh@zDtBbD`Ad@tBJjB{@x@_A`A{BNeGg@oDmBuC|AuHbLai@dHu[l@s@Ko@|F}W~Jud@tA?~AGrDa@xCiN|K}f@vFy`@rCqZfCuTjF_\yGkDe[_Pee@oTs`@sQuS`PoWnTaJ`IcAB}KKkMUe@jIqDrS{AzIRdOZKf@cEf@{Er@uFzCuArBaAtBTxCvAv@x@?nBNlALfBClAUtAQLo@C'
+          online: false

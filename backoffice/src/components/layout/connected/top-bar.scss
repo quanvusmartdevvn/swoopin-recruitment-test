@@ -1,0 +1,268 @@
+@import "~style/variables";
+
+.top-bar {
+  background-color: $darkblue-500;
+  height: 4rem;
+
+  padding-top: env(safe-area-inset-top);
+  box-sizing: content-box;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  z-index: 10;
+
+  user-select: none;
+
+  &__left-action {
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__right-action {
+    min-width: 4rem;
+    height: 4rem;
+
+    flex: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+
+    color: white;
+  }
+
+  &__action-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 1.25rem;
+  }
+
+  &__action-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  &__title {
+    width: 100%;
+    height: 4rem;
+    flex: 1;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  &__title-text {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__submit {
+    color: $yellow-300;
+
+    animation: check-wobble 1s ease 0s infinite alternate both;
+    @keyframes check-wobble {
+      from { transform: scale(0.8) }
+      to { transform: scale(1) }
+    }
+
+    // Modifiers
+    &--disabled {
+      color: $blue-900;
+      animation: none;
+    }
+  }
+
+
+  &__right-menu {
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 100%;
+  }
+
+  &__help-center {
+    height: 100%;
+    width: 3rem;
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+    border: 0;
+    outline: 0 !important;
+
+    svg {
+      color: $blue-200;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    &:hover {
+      background: rgba(black, 0.1);
+    }
+  }
+
+  &__user-profile {
+    background: transparent;
+    border: 0;
+    outline: 0 !important;
+    box-shadow: none !important;
+    margin: 0;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user-profile-toggle {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0;
+    outline: 0 !important;
+    box-shadow: none !important;
+    color: $blue-200;
+    height: 100%;
+    font-size: 0.9rem;
+    margin: 0 !important;
+    padding: 0 !important;
+    padding-right: 1rem !important;
+
+    &:hover, &:focus, &:active, &:hover:focus, &:hover:active, &:active:focus {
+      background: rgba(black, 0.1) !important;
+      border: 0 !important;
+      outline: 0 !important;
+      box-shadow: none !important;
+      color: $blue-200 !important;
+    }
+
+    &:after {
+      display: none;
+    }
+
+    svg {
+      color: $blue-200;
+      font-size: 1.5rem;
+      margin: 0.5rem;
+    }
+  }
+
+  &__user-profile-carret {
+    font-size: 1.1rem !important;
+  }
+
+  &__user-profile-entry {
+    min-width: 15rem;
+    padding: 0.25rem 1rem;
+    margin: 0;
+    line-height: 2rem;
+    font-size: 1rem !important;
+    color: $darkblue-500 !important;
+  }
+
+  &__user-profile-icon {
+    margin: 0 0.5rem 0 0 !important;
+    font-size: 1.1rem !important;
+    color: $darkblue-500 !important;
+  }
+
+
+  // Media queries
+  @include desktop() {
+    left: 5.5rem;
+    background-color: #1A217E;
+    border-bottom: 2px solid $darkblue-400;
+    height: 4.5rem;
+
+    &--full {
+      left: 0;
+    }
+
+    &__title {
+      font-size: 1.4rem;
+      color: white;
+    }
+
+    &__title-icon {
+      margin: 0 1rem 0;
+      vertical-align: text-top;
+      color: white;
+      path {
+        fill: white;
+      }
+    }
+
+    &__title-text {
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    &__submit {
+      // Modifiers
+      &--disabled {
+      }
+    }
+
+    &__right-menu {
+    }
+
+    &__help-center {
+      svg {
+      }
+
+      &:hover {
+      }
+    }
+
+    &__user-profile {
+    }
+
+    &__user-profile-toggle {
+      &:hover, &:focus, &:active, &:hover:focus, &:hover:active, &:active:focus {
+      }
+
+      &:after {
+      }
+
+      svg {
+      }
+    }
+
+    &__user-profile-carret {
+    }
+
+    &__user-profile-entry {
+    }
+
+    &__user-profile-icon {
+    }
+  }
+}

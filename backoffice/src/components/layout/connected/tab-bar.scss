@@ -1,0 +1,230 @@
+@import "~style/variables";
+
+.tab-bar {
+  $block: &;
+
+  width: 100%;
+  height: 4rem;
+
+  position: fixed;
+  bottom: 0;
+
+  background-color: #1A217E;
+
+  z-index: 10;
+
+  user-select: none;
+
+  &:before {
+    display: block;
+    position: absolute;
+    content: ' ';
+    top: -2rem;
+    left: 0;
+    right: 0;
+    height: 6rem;
+
+    background-image: url("~resources/images/background-menu.svg");
+    background-size: auto 6rem;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  // Elements
+  &__tabs {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+  }
+
+  &__tab {
+    width: 100%;
+    height: calc(100% - 0.15rem);
+    flex: 1;
+    overflow: hidden;
+
+    margin-bottom: 0.15rem;
+    border-bottom: 0.2rem solid transparent;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // Modifiers
+    &--audio {
+      position: relative;
+      top: -1.25rem;
+      background-color: $blue-100;
+      border: 0.2rem solid transparent;
+      border-radius: 5rem;
+      width: 4.5rem;
+      height: 4.5rem;
+      flex: none;
+
+      // Modifiers
+      &#{$block}__tab--active {
+        &:not(.active) {
+          animation: wobble 1.5s ease 0s infinite alternate both;
+        }
+        background-color: $white;
+      }
+
+      &#{$block}__tab--active-desktop {
+        &:before {
+          background-color: $white;
+        }
+
+        &:not(.active) {
+          &:before {
+            animation: wobble 1.5s ease 0s infinite alternate both;
+          }
+
+          & #{$block}__tab-icon {
+            animation: wobble 1.5s ease 0s infinite alternate both;
+          }
+        }
+      }
+
+      @keyframes wobble {
+        from {
+          transform: scale(1)
+        }
+        to {
+          transform: scale(0.75)
+        }
+      }
+
+      // Children
+      & #{$block}__tab-title {
+        display: none;
+      }
+      & #{$block}__tab-icon {
+        font-size: 2.5rem;
+        margin-top: 0;
+      }
+    }
+
+    // External modifiers
+    &.active {
+      border-color: $white;
+    }
+  }
+
+  &__tab-icon {
+    font-size: 1.5rem;
+    margin-top: 0.25rem;
+  }
+
+  &__tab-title {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 0.25rem;
+
+    @media(max-width: 320px) {
+      font-size: 3vw;
+    }
+  }
+
+  // Media queries
+  @include desktop() {
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+
+    width: 5.5rem;
+    height: 100%;
+
+    border-right: 2px solid $darkblue-400;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    &:before {
+      display: none;
+    }
+
+    // Elements
+    &__tabs {
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow-y: auto;
+    }
+
+    &__tab {
+      flex: none;
+      height: 5rem;
+      border-bottom: 0;
+      border-left: 3px solid transparent;
+
+      // Modifiers
+
+      &--audio {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 5rem;
+        background-color: transparent;
+        border-radius: 0;
+        border: 0;
+        border-left: 3px solid transparent;
+        flex: none;
+
+        // Pseudo element
+        &:before {
+          display: block;
+          content: ' ';
+          position: absolute;
+          top: 0.5rem;
+          left: 1.40rem;
+          background-color: $blue-400;
+          border: 0.2rem solid transparent;
+          border-radius: 5.5rem;
+          width: 2.5rem;
+          height: 2.5rem;
+          z-index: 0;
+
+          @media (max-height: 483px) {
+            left: 0.9rem;
+          }
+        }
+
+        // Children
+        & #{$block}__tab-title {
+          display: block;
+          z-index: 1;
+        }
+        & #{$block}__tab-icon {
+          font-size: 1.75rem;
+          margin-top: 0;
+          z-index: 1;
+        }
+      }
+
+      // External modifiers
+      &.active {
+        background-color: $darkblue-700;
+      }
+    }
+
+    &__tab-icon {
+      font-size: 1.75rem;
+    }
+
+    &__tab-title {
+      margin-top: 0.6rem;
+    }
+
+    .warehouse-dropdown {
+      flex: none;
+    }
+  }
+}

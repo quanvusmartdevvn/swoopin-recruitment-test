@@ -1,0 +1,143 @@
+@import "~destyle.css";
+@import "colors.scss";
+@import "variables.scss";
+
+html {
+  font-size: 100% !important;
+}
+body {
+  background-color: $lightblue-50;
+  font-family: $font-main;
+  font-weight: 200;
+  font-size: 1rem !important;
+  color: $font-color;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+svg {
+  height: 1em;
+  width: 1em;
+}
+
+/* Titles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title;
+  font-weight: 400;
+}
+
+/* Paragraph & Typographic */
+
+p {
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Links */
+
+a {
+  color: $blue-800;
+  word-wrap: break-word;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover, a:focus {
+  color: $pink-900;
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before, a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $lightblue-200;
+  margin: 1em 0;
+  padding: 0;
+}
+
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  padding: 1em;
+  height: auto;
+  border-radius: 3px;
+
+  font-family: $font-main;
+  font-weight: 200;
+  letter-spacing: 0.025rem;
+
+  border-color: $gray-200;
+
+  &:active, &:focus {
+    box-shadow: 0 0 0 1px $gray-300;
+  }
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+
+
+button.btn {
+  border-radius: 3px;
+  text-align: center;
+  padding: 0.5em 2em;
+  margin: 0.5em;
+
+  font-family: $font-form;
+  font-weight: 600;
+}
+
+@mixin themeBtn($variant, $color, $fontColor: white) {
+  .btn-#{$variant} {
+    background-color: $color;
+    border-color: $color;
+    color: $fontColor;
+
+    &:active, &:hover, &:hover:active {
+      background-color: $color !important;
+      border-color: $color !important;
+      color: $fontColor;
+    }
+
+    &:focus, &:active:focus {
+      box-shadow: 0 0 0 2px $color !important;
+      color: $fontColor;
+    }
+
+    &:active:hover {
+      box-shadow: 0 0 0 3px $color !important;
+      color: $fontColor;
+    }
+
+    &:disabled {
+      background-color: $color !important;
+      border-color: $color !important;
+      color: $fontColor;
+    }
+  }
+}
+
+@include themeBtn(primary, #1E1C89);
+@include themeBtn(secondary, #808080);
+@include themeBtn(info, #FFFFFF, $font-color);
+@include themeBtn(danger, #FF0000);
+@include themeBtn(dark, #00008B);
+

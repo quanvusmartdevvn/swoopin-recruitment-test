@@ -1,0 +1,9 @@
+{
+  "name": "@swoopin/eslint-config",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ESLint config for the Swoopin Monorepo",
+  "main": "index.js",
+  "author": "Jérémie van der Sande <jeremie@fleeters.io>",
+  "license": "ISC"
+}

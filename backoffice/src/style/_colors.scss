@@ -1,0 +1,326 @@
+$white: #fff !default;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$gray:
+        $white
+        $gray-100
+        $gray-200
+        $gray-300
+        $gray-400
+        $gray-500
+        $gray-600
+        $gray-700
+        $gray-800
+        $gray-900
+;
+
+$darkblue:
+        rgb(228, 228, 234)
+        rgb(186, 189, 202)
+        rgb(141, 145, 166)
+        rgb(95, 100, 130)
+        rgb(60, 67, 104)
+        rgb(26, 34, 77)
+        rgb(23, 30, 70)
+        rgb(19, 25, 61)
+        rgb(15, 20, 52)
+        rgb(8, 12, 37)
+        rgb(98, 113, 255)
+        rgb(47, 67, 255)
+        rgb(0, 24, 251)
+        rgb(0, 21, 225)
+        rgb(80, 85, 120)
+        rgb(26, 34, 77)
+;
+
+$darkblue-50: nth($darkblue, 1);
+$darkblue-100: nth($darkblue, 2);
+$darkblue-200: nth($darkblue, 3);
+$darkblue-300: nth($darkblue, 4);
+$darkblue-400: nth($darkblue, 5);
+$darkblue-500: nth($darkblue, 6);
+$darkblue-600: nth($darkblue, 7);
+$darkblue-700: nth($darkblue, 8);
+$darkblue-800: nth($darkblue, 9);
+$darkblue-900: nth($darkblue, 10);
+$darkblue-A100: nth($darkblue, 11);
+$darkblue-A200: nth($darkblue, 12);
+$darkblue-A400: nth($darkblue, 13);
+$darkblue-A700: nth($darkblue, 14);
+$darkblue-A800: nth($darkblue, 15);
+$darkblue-A900: nth($darkblue, 16);
+
+
+$blue:
+        rgb(241, 243, 249)
+        rgb(221, 226, 239)
+        rgb(199, 207, 229)
+        rgb(176, 187, 218)
+        rgb(159, 173, 210)
+        rgb(142, 158, 202)
+        rgb(134, 150, 197)
+        rgb(123, 140, 189)
+        rgb(113, 130, 183)
+        rgb(95, 112, 171)
+        rgb(255, 255, 255)
+        rgb(229, 234, 255)
+        rgb(178, 195, 255)
+        rgb(152, 175, 255)
+;
+
+$blue-50: nth($blue, 1);
+$blue-100: nth($blue, 2);
+$blue-200: nth($blue, 3);
+$blue-300: nth($blue, 4);
+$blue-400: nth($blue, 5);
+$blue-500: nth($blue, 6);
+$blue-600: nth($blue, 7);
+$blue-700: nth($blue, 8);
+$blue-800: nth($blue, 9);
+$blue-900: nth($blue, 10);
+$blue-A100: nth($blue, 11);
+$blue-A200: nth($blue, 12);
+$blue-A400: nth($blue, 13);
+$blue-A700: nth($blue, 14);
+
+
+$lightblue:
+        rgb(248, 249, 252)
+        rgb(237, 239, 246)
+        rgb(226, 228, 241)
+        rgb(214, 217, 235)
+        rgb(205, 209, 230)
+        rgb(196, 201, 226)
+        rgb(190, 195, 223)
+        rgb(182, 188, 218)
+        rgb(175, 181, 214)
+        rgb(162, 169, 207)
+        rgb(255, 255, 255)
+        rgb(255, 255, 255)
+        rgb(255, 255, 255)
+        rgb(246, 248, 255)
+;
+
+$lightblue-50: nth($lightblue, 1);
+$lightblue-100: nth($lightblue, 2);
+$lightblue-200: nth($lightblue, 3);
+$lightblue-300: nth($lightblue, 4);
+$lightblue-400: nth($lightblue, 5);
+$lightblue-500: nth($lightblue, 6);
+$lightblue-600: nth($lightblue, 7);
+$lightblue-700: nth($lightblue, 8);
+$lightblue-800: nth($lightblue, 9);
+$lightblue-900: nth($lightblue, 10);
+$lightblue-A100: nth($lightblue, 11);
+$lightblue-A200: nth($lightblue, 12);
+$lightblue-A400: nth($lightblue, 13);
+$lightblue-A700: nth($lightblue, 14);
+
+
+$pink:
+        rgb(252, 246, 246)
+        rgb(249, 232, 231)
+        rgb(245, 217, 216)
+        rgb(240, 201, 200)
+        rgb(237, 190, 188)
+        rgb(234, 178, 176)
+        rgb(231, 171, 169)
+        rgb(228, 162, 160)
+        rgb(225, 153, 151)
+        rgb(219, 138, 135)
+        rgb(255, 255, 255)
+        rgb(255, 255, 255)
+        rgb(255, 255, 255)
+        rgb(255, 234, 234)
+;
+
+$pink-50: nth($pink, 1);
+$pink-100: nth($pink, 2);
+$pink-200: nth($pink, 3);
+$pink-300: nth($pink, 4);
+$pink-400: nth($pink, 5);
+$pink-500: nth($pink, 6);
+$pink-600: nth($pink, 7);
+$pink-700: nth($pink, 8);
+$pink-800: nth($pink, 9);
+$pink-900: nth($pink, 10);
+$pink-A100: nth($pink, 11);
+$pink-A200: nth($pink, 12);
+$pink-A400: nth($pink, 13);
+$pink-A700: nth($pink, 14);
+
+
+$yellow:
+        rgb(255, 249, 235)
+        rgb(254, 241, 204)
+        rgb(253, 232, 171)
+        rgb(252, 223, 137)
+        rgb(252, 216, 111)
+        rgb(251, 209, 86)
+        rgb(250, 204, 79)
+        rgb(250, 198, 69)
+        rgb(249, 192, 60)
+        rgb(248, 181, 43)
+        rgb(255, 255, 255)
+        rgb(255, 255, 255)
+        rgb(255, 239, 209)
+        rgb(255, 230, 184)
+;
+
+$yellow-50: nth($yellow, 1);
+$yellow-100: nth($yellow, 2);
+$yellow-200: nth($yellow, 3);
+$yellow-300: nth($yellow, 4);
+$yellow-400: nth($yellow, 5);
+$yellow-500: nth($yellow, 6);
+$yellow-600: nth($yellow, 7);
+$yellow-700: nth($yellow, 8);
+$yellow-800: nth($yellow, 9);
+$yellow-900: nth($yellow, 10);
+$yellow-A100: nth($yellow, 11);
+$yellow-A200: nth($yellow, 12);
+$yellow-A400: nth($yellow, 13);
+$yellow-A700: nth($yellow, 14);
+
+
+$red:
+        rgb(252, 234, 232)
+        rgb(248, 202, 197)
+        rgb(243, 166, 158)
+        rgb(238, 130, 119)
+        rgb(234, 104, 90)
+        rgb(230, 77, 61)
+        rgb(227, 70, 55)
+        rgb(223, 61, 47)
+        rgb(219, 52, 39)
+        rgb(213, 37, 26)
+        rgb(255, 255, 255)
+        rgb(255, 215, 213)
+        rgb(255, 167, 162)
+        rgb(255, 142, 137)
+;
+
+$red-50: nth($red, 1);
+$red-100: nth($red, 2);
+$red-200: nth($red, 3);
+$red-300: nth($red, 4);
+$red-400: nth($red, 5);
+$red-500: nth($red, 6);
+$red-600: nth($red, 7);
+$red-700: nth($red, 8);
+$red-800: nth($red, 9);
+$red-900: nth($red, 10);
+$red-A100: nth($red, 11);
+$red-A200: nth($red, 12);
+$red-A400: nth($red, 13);
+$red-A700: nth($red, 14);
+
+/* For use in _color-definitions.scss */
+$accentgreen:
+        rgb(224, 249, 245)
+        rgb(179, 241, 230)
+        rgb(128, 232, 214)
+        rgb(77, 223, 198)
+        rgb(38, 216, 185)
+        rgb(0, 209, 173)
+        rgb(0, 204, 166)
+        rgb(0, 198, 156)
+        rgb(0, 192, 147)
+        rgb(0, 181, 131)
+        rgb(222, 255, 245)
+        rgb(171, 255, 228)
+        rgb(120, 255, 212)
+        rgb(94, 255, 204)
+;
+
+$accentgreen-50: nth($accentgreen, 1);
+$accentgreen-100: nth($accentgreen, 2);
+$accentgreen-200: nth($accentgreen, 3);
+$accentgreen-300: nth($accentgreen, 4);
+$accentgreen-400: nth($accentgreen, 5);
+$accentgreen-500: nth($accentgreen, 6);
+$accentgreen-600: nth($accentgreen, 7);
+$accentgreen-700: nth($accentgreen, 8);
+$accentgreen-800: nth($accentgreen, 9);
+$accentgreen-900: nth($accentgreen, 10);
+$accentgreen-A100: nth($accentgreen, 11);
+$accentgreen-A200: nth($accentgreen, 12);
+$accentgreen-A400: nth($accentgreen, 13);
+$accentgreen-A700: nth($accentgreen, 14);
+
+
+$accentblue:
+        rgb(228, 242, 249)
+        rgb(188, 222, 240)
+        rgb(144, 201, 230)
+        rgb(99, 179, 219)
+        rgb(65, 162, 212)
+        rgb(32, 146, 204)
+        rgb(28, 138, 199)
+        rgb(24, 127, 192)
+        rgb(19, 117, 185)
+        rgb(11, 99, 173)
+        rgb(218, 237, 255)
+        rgb(167, 211, 255)
+        rgb(116, 185, 255)
+        rgb(91, 172, 255)
+;
+
+$accentblue-50: nth($accentblue, 1);
+$accentblue-100: nth($accentblue, 2);
+$accentblue-200: nth($accentblue, 3);
+$accentblue-300: nth($accentblue, 4);
+$accentblue-400: nth($accentblue, 5);
+$accentblue-500: nth($accentblue, 6);
+$accentblue-600: nth($accentblue, 7);
+$accentblue-700: nth($accentblue, 8);
+$accentblue-800: nth($accentblue, 9);
+$accentblue-900: nth($accentblue, 10);
+$accentblue-A100: nth($accentblue, 11);
+$accentblue-A200: nth($accentblue, 12);
+$accentblue-A400: nth($accentblue, 13);
+$accentblue-A700: nth($accentblue, 14);
+
+/* For use in _color-definitions.scss */
+$accentyellow:
+        rgb(245, 242, 236)
+        rgb(230, 223, 209)
+        rgb(213, 202, 178)
+        rgb(196, 180, 147)
+        rgb(183, 164, 123)
+        rgb(170, 148, 100)
+        rgb(163, 140, 92)
+        rgb(153, 129, 82)
+        rgb(144, 119, 72)
+        rgb(127, 101, 54)
+        rgb(255, 236, 206)
+        rgb(255, 217, 155)
+        rgb(255, 198, 104)
+        rgb(255, 188, 78)
+;
+
+$accentyellow-50: nth($accentyellow, 1);
+$accentyellow-100: nth($accentyellow, 2);
+$accentyellow-200: nth($accentyellow, 3);
+$accentyellow-300: nth($accentyellow, 4);
+$accentyellow-400: nth($accentyellow, 5);
+$accentyellow-500: nth($accentyellow, 6);
+$accentyellow-600: nth($accentyellow, 7);
+$accentyellow-700: nth($accentyellow, 8);
+$accentyellow-800: nth($accentyellow, 9);
+$accentyellow-900: nth($accentyellow, 10);
+$accentyellow-A100: nth($accentyellow, 11);
+$accentyellow-A200: nth($accentyellow, 12);
+$accentyellow-A400: nth($accentyellow, 13);
+$accentyellow-A700: nth($accentyellow, 14);
+
+

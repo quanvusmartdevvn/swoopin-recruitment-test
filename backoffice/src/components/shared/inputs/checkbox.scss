@@ -1,0 +1,21 @@
+@import "~style/variables";
+
+.checkbox {
+  input {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+
+  margin: 0 0.5em;
+
+  font-size: 1.5em;
+  color: $gray-300;
+
+  .checked,.mixed {
+   color: $blue-700;
+  }
+}

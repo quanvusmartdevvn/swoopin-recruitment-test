@@ -1,0 +1,61 @@
+@import "~style/variables";
+
+.page-help {
+  padding: 2vh 2vh 3rem;
+
+  &__title {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(black, 0.5);
+  }
+
+  &__summary {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@include desktop() {
+  .page-help {
+    &__title {
+      text-shadow: none;
+      display: flex;
+      color: black;
+      align-items: center;
+      margin: 3rem 0 1rem;
+
+      &:first-of-type {
+        margin-top: 1rem;
+      }
+    }
+
+    &__title-icon {
+      font-size: 1.4em;
+      color: black;
+      margin-right: 1rem;
+    }
+  }
+}
+
+@include desktop-width() {
+  .page-home {
+    &__summary {
+      justify-content: flex-start;
+    }
+
+    &__column {
+      margin-left: 1rem;
+    }
+  }
+}
